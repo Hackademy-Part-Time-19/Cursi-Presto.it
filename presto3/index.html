@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presto.it</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <nav>
+      <div class="divFlex">
+        <div id="divLogo"><h1 id="logo">PRESTO</h1></div>
+      </div>
+      <div class="divFlex">
+        <div>
+          <button id="buttonRegistrati">REGISTRATI</button>
+        </div>
+        <div>
+          <button id="buttonLogin">LOGIN</button>
+        </div>
+        <div>
+          <button id="darkModeButton" onclick="toggleDarkMode()">
+            Dark Mode
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="landing-page">
+      <div class="image-slider">
+        <img
+          src="https://i.pinimg.com/736x/e6/f2/6d/e6f26dc957e5e5f9d0df1654f89b0c50.jpg"
+          alt="logo"
+        />
+        <img
+          src="https://media.designrush.com/inspiration_images/292255/conversions/levi_logo_4_82250bd000e1-mobile.jpg"
+          alt="logo"
+        />
+        <img
+          src="https://lagabbiastreetshop.com/cdn/shop/collections/PREV1_logo-white-bkgnd.jpg?v=1632476624"
+          alt="logo"
+        />
+        <img
+          src="https://turbologo.com/articles/wp-content/uploads/2019/12/The-Air-Jordan-Jumpman-logo.png.webp"
+          alt="logo"
+        />
+        <img
+          src="https://static.vecteezy.com/ti/vettori-gratis/t2/10994412-nike-logo-nero-con-nome-abiti-design-icona-astratto-calcio-vettore-illustrazione-con-bianca-sfondo-gratuito-vettoriale.jpg"
+          alt="logo"
+        />
+        <img
+          src="https://cdn.sanity.io/images/kts928pd/production/254e805fc27df499af428dfa9fa9cdf9c119a7a3-1280x720.png"
+          alt="logo"
+        />
+      </div>
+      <div class="content">
+        <h1>Benvenuto nel nostro shop.</h1>
+        <p>Guarda i prodotti presenti nello shop.</p>
+      </div>
+    </div>
+    <div class="button-container">
+      <div>
+        <label for="categoria" style="color: white;" onkeypress="gestisciKeyPress(event)">Scegli una categoria:</label>
+        <select name="Categorie" id="inputCategoria">
+          <option value="">Seleziona una categoria</option>
+          <option value="electronics">Elettronica</option>
+          <option value="jewelery">Gioielli</option>
+          <option value="men's clothing">Abbigliamento maschile</option>
+          <option value="women's clothing">Abbigliamento femminile</option>
+        </select>
+      </div>
+      <div>
+        <label for="prezzo" style="color: white;" onkeypress="gestisciKeyPress(event)">Scegli una fascia di prezzo:</label>
+        <select name="Prezzo" id="inputPrezzo">
+          <option value="">Seleziona una fascia di prezzo</option>
+          <option value="0-50">0-100€</option>
+          <option value="100-200">100€-200€</option>
+          <option value="200-500">200-500€</option>
+          <option value="500">500+</option>
+        </select>
+      </div>
+      <div>
+        <input
+          id="inputNome"
+          placeholder="Inserisci il nome del prodotto"
+          style="outline: none"
+        />
+        <button onclick="vaiagliannunci()" style="background-color: rgb(32, 187, 32);" onkeypress="gestisciKeyPress(event)">Cerca</button>
+
+      </div>
+    </div>
+    <div class="image-square" style="margin-top: 10;">
+      <div class="image-row">
+        <div class="image-item">
+          <img
+            src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+            alt="Descrizione immagine 1"
+          />
+        </div>
+        <div class="image-item">
+          <img
+            src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+            alt="Descrizione immagine 2"
+          />
+        </div>
+      </div>
+      <div class="image-row">
+        <div class="image-item">
+          <img
+            src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+            alt="Descrizione immagine 3"
+          />
+        </div>
+        <div class="image-item">
+          <img
+            src="https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg"
+            alt="Descrizione immagine 4"
+          />
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Nasciamo nel 2023 come progetto per Aulab, ci aggiorniamo lezione dopo lezione</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: mattiacursi8@gmail.com</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <a href="https://www.instagram.com/mattia_cursi/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/mattiaemilianocursi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/mattia_cursi/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Presto.it | All rights reserved
+        </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
